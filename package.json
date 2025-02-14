@@ -1,0 +1,87 @@
+{
+  "name": "markdownphotoupload",
+  "displayName": "Markdown Photo Upload",
+  "description": "",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.97.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "configuration": {
+      "title": "Markdown Photo Upload Settings",
+      "properties": {
+          "markdown_photo_upload.github_token": {
+              "type": "string",
+              "default": "",
+              "description": "github token form https://github.com/settings/tokens"
+          },
+          "markdown_photo_upload.repository_name": {
+              "type": "string",
+              "default": "Photo-store",
+              "description": "github repository name"
+          },
+          "markdown_photo_upload.repository_owner": {
+              "type": "string",
+              "default": "",
+              "description": "repository owner"
+          },
+          "markdown_photo_upload.git_brancn": {
+              "type": "string",
+              "default": "master",
+              "description": "git branch"
+          },
+          "markdown_photo_upload.sub_folder": {
+              "type": "string",
+              "default": "",
+              "description": "git sub folder, if empty, the photo will upload to root"
+          }
+      }
+    },
+    "commands": [
+      {
+        "command": "markdown_photo_upload.helloworld",
+        "title": "Hello VS Code"
+      },
+      {
+        "command": "markdown_photo_upload.upload",
+        "title": "Upload Photo To Git"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "markdown_photo_upload.upload",
+          "group": "group1",
+          "when": "editorTextFocus && editorLangId == 'markdown'"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@types/vscode": "^1.97.0",
+    "@typescript-eslint/eslint-plugin": "^8.22.0",
+    "@typescript-eslint/parser": "^8.22.0",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1",
+    "eslint": "^9.19.0",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "@octokit/rest": "^21.1.0"
+  }
+}
