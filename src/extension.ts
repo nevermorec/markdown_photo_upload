@@ -95,7 +95,7 @@ async function replaceImageLinks(gitInfo: GitInfo, markdown: string, dir: string
 	for (const url of urls) {
 		if (url.startsWith("http")) {
 
-		} else if (url.startsWith(".")) {
+		} else {
 			const absPath = path.resolve(dir, url);
 			console.log(`本地文件的绝对路径: ${absPath}`);
 			const fileName = url.substring(url.lastIndexOf('/') + 1, url.length);
@@ -104,10 +104,6 @@ async function replaceImageLinks(gitInfo: GitInfo, markdown: string, dir: string
 			if (remoteUrl != "") {
 				markdown = markdown.replace(url, remoteUrl);
 			}
-		} else {
-			const fileName = url.substring(url.lastIndexOf('/') + 1, url.length);
-			const remoteUrl = await uploadFileToGitHub(gitInfo, url, `${remotePathPrefix}${fileName}`);
-			markdown = markdown.replace(url, remoteUrl);
 		}
 	}
 	return markdown;
