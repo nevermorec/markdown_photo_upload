@@ -15,11 +15,12 @@ markdown原图片链接为
 ![example——1](https://github.com/nevermorec/Photo-store/blob/master/AI/Snipaste_2025-02-14_17-04-39.png?raw=true)
 
 <br>
+
 ## VSCode 设置（重要）
--- github token（参见 https://github.com/settings/tokens）
--- 仓库所有者
--- 仓库名称
--- 仓库分支
+- github token（参见 https://github.com/settings/tokens）
+- 仓库所有者
+- 仓库名称
+- 仓库分支
 
 ## Intro
 The following describes a functionality that uploads local image links in Markdown to a GitHub repository and automatically converts them into HTTP links. Local image links cannot be easily shared with others via Markdown, but HTTP image links can be conveniently accessed by others for viewing. A specific example is provided below.
@@ -36,10 +37,10 @@ Upload the image to github automatically, and the text will be automatically rep
 ![Su](https://github.com/nevermorec/Photo-store/blob/master/AI/Snipaste_2025-02-14_17-04-39.png?raw=true)
 
 ## VSCode Setting(Important)
--- github token (see https://github.com/settings/tokens)
--- repository owner
--- repository name
--- repository branch
+- github token (see https://github.com/settings/tokens)
+- repository owner
+- repository name
+- repository branch
 
 **Enjoy!**
 
