@@ -8,8 +8,8 @@
 markdown原图片链接为
 ![example——1](https://github.com/nevermorec/Photo-store/blob/master/AI/Snipaste_2025-02-14_17-03-02.png?raw=true)
 
-右键弹出菜单，选择Upload Photo To Git
-![example——2](https://github.com/nevermorec/Photo-store/blob/master/AI/Snipaste_2025-02-14_17-03-44.png?raw=true){:height="40%" width="40%"}
+右键弹出菜单，选择Upload Photo To Git  
+<img src="https://github.com/nevermorec/Photo-store/raw/master/AI/Snipaste_2025-02-14_17-03-44.png" alt="描述" width="300">
 
 自动上传图片到github，文本会被自动替换成对应的http链接
 ![example——1](https://github.com/nevermorec/Photo-store/blob/master/AI/Snipaste_2025-02-14_17-04-39.png?raw=true)
@@ -29,8 +29,8 @@ Give a specific example.
 The original image link in markdown is
 ![example](https://github.com/nevermorec/Photo-store/blob/master/AI/Snipaste_2025-02-14_17-03-02.png?raw=true)
 
-Right-click to pop up the menu, select Upload Photo To Git
-![Su](https://github.com/nevermorec/Photo-store/blob/master/AI/Snipaste_2025-02-14_17-03-44.png?raw=true){:height="40%" width="40%"}
+Right-click to pop up the menu, select Upload Photo To Git  
+<img src="https://github.com/nevermorec/Photo-store/raw/master/AI/Snipaste_2025-02-14_17-03-44.png" alt="描述" width="300">
 
 Upload the image to github automatically, and the text will be automatically replaced with the corresponding http link
 ![Su](https://github.com/nevermorec/Photo-store/blob/master/AI/Snipaste_2025-02-14_17-04-39.png?raw=true)
