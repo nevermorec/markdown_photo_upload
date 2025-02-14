@@ -1,7 +1,7 @@
 {
   "name": "markdownphotoupload",
   "displayName": "Markdown Photo Upload",
-  "description": "",
+  "description": "这个插件能够方便将本地的Markdown图片链接上传到GitHub仓库（使用Github作为图床），并自动转换成HTTP图片链接。",
   "version": "1.0.0",
   "engines": {
     "vscode": "^1.97.0"
